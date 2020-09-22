@@ -1,6 +1,6 @@
 #Style Tiles with CSS
 
-https://github.com/lasseclaes/style-tiles-with-css-20A
+https://github.com/lasseclaes/Style-Tiles-in-CSS-20A.git
 ---
 forked from and based on Jerad Gallingers work
 https://github.com/jeradg/style-tiles-with-scss
