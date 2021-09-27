@@ -15,11 +15,11 @@ use the fonts in other ways in the font hierarchy etc. */
 /* change / delete some of these - note: all variables are listed twice */
 
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --red: #e30413;
+  --black: #232220;
+  --eggshell: #f6f3ee;
+  --creme: #d9cdb8;
+  --dark-creme: #beb097;
 
   --primary-font: "Open Sans", sans-serif;
   --secondary-font: "Droid Serif", serif;
@@ -111,9 +111,13 @@ ul {
 }
 
 .swatches li {
-  margin-right: 5vw;
-  height: 15vw;
-  width: 20%;
+  margin-right: 1vw;
+  height: 7vw;
+  width: 30%;
+}
+
+.swatches .swatchgrid li {
+  border-radius: 50%;
 }
 
 ul li:last-child {
@@ -121,23 +125,23 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: var(--red);
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: var(--black);
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: var(--eggshell);
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
+  background-color: var(--creme);
 }
 
 .color-swatch-5 {
-  background-color: var(--color-5);
+  background-color: var(--dark-creme);
 }
 
 .textures li {
@@ -147,7 +151,7 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/ivan-gromov-Y3vPEuNlf7w-unsplash.jpg) top left repeat;
 }
 
 .texture-swatch-2 {
@@ -182,21 +186,21 @@ ul li:last-child {
 button {
   padding: 1rem;
   border-radius: 4px;
-  background: var(--link-color);
+  background: var(--dark-creme);
   text-align: center;
   text-decoration: none;
   font: bold 1.25em/1 var(--primary-font);
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
+  text-shadow: 0px -1px 0px var(--eggshell);
   transition: all 0.2s ease;
   cursor: pointer;
   /* margin: 0 1rem 0 0; */
 }
 
 .secondary-button {
-  background: var(--color-5);
+  background: var(--creme);
 }
 
 button:focus,
@@ -288,12 +292,6 @@ footer {
     grid-gap: 4rem;
   }
 
-  .swatches li {
-    margin-right: 3%;
-    height: 10vw;
-    width: 20%;
-  }
-
   .textures li {
     height: 15vw;
   }
@@ -301,6 +299,6 @@ footer {
 
 @media (min-width: 900px) {
   .adjectives ul {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
