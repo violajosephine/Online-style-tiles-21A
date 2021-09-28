@@ -1,8 +1,6 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;500&display=swap");
 
 * {
   box-sizing: border-box;
@@ -15,26 +13,14 @@ use the fonts in other ways in the font hierarchy etc. */
 /* change / delete some of these - note: all variables are listed twice */
 
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
-
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #000;
-
-  --white-space: 1rem;
-
-  --bg-color: #000;
+  --bg-color: #d9cdb8;
   --link-color: #000;
   --link-hover-color: #000;
   --color-4: #000;
   --color-5: #000;
 
-  --primary-font: sans-serif;
-  --secondary-font: serif;
+  --primary-font: "Bebas Neue", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
   --main-text-color: #000;
 
   --white-space: 2rem;
@@ -121,7 +107,7 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: var(--link-color);
 }
 
 .color-swatch-2 {
@@ -222,11 +208,11 @@ button:active {
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
+  font-family: var(--primary-font);
 }
 
 .h2-sample {
   font-family: var(--secondary-font);
-  font-style: italic;
   font-size: 1.25rem;
 }
 
