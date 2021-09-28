@@ -212,10 +212,10 @@ button:focus-within {
   border-radius: 4px;
 }
 
-button:hover {
+/* button:hover {
   background-color: var(--link-hover-color);
   transform: scale(3) rotate(40deg);
-}
+} */
 
 button:active {
   background-color: var(--bg-color);
