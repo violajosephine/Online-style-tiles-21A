@@ -1,6 +1,6 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&family=Roboto:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
@@ -19,7 +19,7 @@ use the fonts in other ways in the font hierarchy etc. */
   --color-4: #000;
   --color-5: #000;
 
-  --primary-font: "Bebas Neue", sans-serif;
+  --primary-font: "Roboto condensed", sans-serif;
   --secondary-font: "Roboto", sans-serif;
   --main-text-color: #000;
 
@@ -68,7 +68,6 @@ footer {
 
 .header-wrapper h3 {
   font-size: 1.2rem;
-  font-style: italic;
 }
 
 .header-wrapper h4 {
@@ -85,9 +84,8 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
-  font-size: 1.3rem;
-  color: #777;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
   margin: 0.5rem 0;
 }
 
@@ -214,12 +212,14 @@ button:active {
 .h2-sample {
   font-family: var(--secondary-font);
   font-size: 1.25rem;
+  font-weight: normal;
 }
 
 p.typography-sample {
   font-family: var(--secondary-font);
   line-height: 1.5;
   max-width: 960px;
+  font-weight: lighter;
 }
 
 strong {
