@@ -1,6 +1,6 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&family=Roboto:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
@@ -19,21 +19,10 @@ use the fonts in other ways in the font hierarchy etc. */
   --creme: #d9cdb8;
   --dark-creme: #beb097;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #000;
-
-  --white-space: 1rem;
-
-  --bg-color: #000;
-  --link-color: #000;
-  --link-hover-color: #000;
-  --color-4: #000;
-  --color-5: #000;
-
-  --primary-font: "Bebas Neue", sans-serif;
+  --primary-font: "Roboto Condensed", sans-serif;
   --secondary-font: "Roboto", sans-serif;
   --main-text-color: #000;
+  --header-font: "Bebas Neue", sans-serif;
 
   --white-space: 2rem;
 }
@@ -97,9 +86,9 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
-  font-size: 1.3rem;
-  color: #777;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
   margin: 0.5rem 0;
 }
 
@@ -114,8 +103,17 @@ ul {
 
 .swatches li {
   margin-right: 1vw;
-  height: 8vw;
-  width: 17%;
+  height: 9vw;
+  width: 18%;
+  text-align: center;
+  padding-top: 4vw;
+  font-size: 0;
+  box-shadow: 0px 0px 5px grey;
+}
+
+.swatches li:hover {
+  animation: 2s glow alternate infinite;
+  font-size: 1rem;
 }
 
 .swatches .swatchgrid li {
@@ -132,6 +130,7 @@ ul li:last-child {
 
 .color-swatch-2 {
   background-color: var(--black);
+  color: var(--eggshell);
 }
 
 .color-swatch-3 {
@@ -145,29 +144,41 @@ ul li:last-child {
 .color-swatch-5 {
   background-color: var(--dark-creme);
 }
+@keyframes glow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
 
 .textures li {
-  height: 10vw;
-  width: 10vw;
-  margin-right: 2vw;
+  height: 12vw;
+  width: 12vw;
+  margin-right: 1vw;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .texture-swatch-1 {
   background: url(../img/drivhus.jpg) top left repeat;
+  background-position: center;
 }
 
 .texture-swatch-2 {
   background: url(../img/karolina-wv-b22kPrO6Zsk-unsplash.jpg) top left repeat;
+  background-position: 3/4 right;
 }
 
 .texture-swatch-3 {
   background: url(../img/marissa-price-kvHP-ueoMNI-unsplash.jpg) top left repeat;
+  background-position: left;
 }
 
 .texture-swatch-4 {
   background: url(../img/morogdreng.png) top left repeat;
+  background-position: center;
 }
 
 .images ul {
@@ -189,29 +200,29 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  border-radius: 4px;
-  background: var(--dark-creme);
+  background: var(--creme);
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
+  font: 1.25em/1 var(--primary-font);
   letter-spacing: 1px;
   color: white;
-  text-transform: uppercase;
-  text-shadow: 0px -1px 0px var(--eggshell);
+  text-transform: ;
+  text-shadow: 0px 0px 1px var(--eggshell);
   transition: all 0.2s ease;
   cursor: pointer;
+  border: 0;
+  box-shadow: 0px 1px 5px grey;
   /* margin: 0 1rem 0 0; */
 }
 
 .secondary-button {
-  background: var(--creme);
+  background: var(--dark-creme);
 }
 
 button:focus,
 button:active,
 button:focus-within {
   outline: 0;
-  border-radius: 4px;
 }
 
 /* button:hover {
@@ -219,8 +230,12 @@ button:focus-within {
   transform: scale(3) rotate(40deg);
 } */
 
-button:active {
-  background-color: var(--bg-color);
+.primary-button:active {
+  background-color: var(--dark-creme);
+}
+
+.secondary-button:active {
+  background-color: var(--creme);
 }
 
 .typography-main {
@@ -230,11 +245,11 @@ button:active {
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
-  font-family: var(--primary-font);
+  font-family: var(--header-font);
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   font-size: 1.25rem;
 }
 
@@ -277,12 +292,15 @@ p[class*="font-details-"] {
 }
 
 .adjectives ul {
-  font-size: 2rem;
+  font-size: 1.5rem;
   opacity: 0.5;
 }
 
 .adjectives ul {
   flex-direction: column;
+}
+.adjectives ul li {
+  margin-bottom: 10px;
 }
 
 footer {
