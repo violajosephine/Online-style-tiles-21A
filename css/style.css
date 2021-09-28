@@ -112,8 +112,8 @@ ul {
 
 .swatches li {
   margin-right: 1vw;
-  height: 7vw;
-  width: 30%;
+  height: 8vw;
+  width: 17%;
 }
 
 .swatches .swatchgrid li {
@@ -145,25 +145,27 @@ ul li:last-child {
 }
 
 .textures li {
-  height: 30vw;
-  width: 40%;
-  margin-right: 5vw;
+  height: 10vw;
+  width: 10vw;
+  margin-right: 2vw;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .texture-swatch-1 {
-  background: url(../img/ivan-gromov-Y3vPEuNlf7w-unsplash.jpg) top left repeat;
+  background: url(../img/drivhus.jpg) top left repeat;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/karolina-wv-b22kPrO6Zsk-unsplash.jpg) top left repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(../img/marissa-price-kvHP-ueoMNI-unsplash.jpg) top left repeat;
+}
+
+.texture-swatch-4 {
+  background: url(../img/morogdreng.png) top left repeat;
 }
 
 .images ul {
@@ -290,10 +292,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
-  }
-
-  .textures li {
-    height: 15vw;
   }
 }
 
